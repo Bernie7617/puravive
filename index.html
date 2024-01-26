@@ -8,119 +8,157 @@
     <!-- Include Roboto Condensed font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap">
 
-    <style>
-        body {
-            font-family: 'Roboto Condensed', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f3f3f3;
-            color: #333;
-        }
+   <style>
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f3f3f3;
+        color: #333;
+    }
 
-        a {
-            color: black;
-            font-weight: bold;
-        }
+    a {
+        color: black;
+        font-weight: bold;
+    }
 
-        header {
-            background-color: white;
-            color: black;
-            text-align: center;
-            font-size: 1.5em;
-            padding: 20px;
-            margin-bottom: 20px;
-            position: sticky;
-            top: -16px;
-            z-index: 100;
-        }
+    header {
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 20px;
+        margin-bottom: 20px;
+        position: sticky;
+        top: -15px;
+        z-index: 100;
+    }
 
-        header img {
-            width: 240px;
-            border: none;
-            margin: 0 auto;
-            display: block;
-        }
+    header img {
+        width: 100%;
+        max-width: 240px;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
 
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
+    header p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
 
-        section {
-            padding: 20px;
-            text-align: center;
-            margin: 20px auto;
-            background-color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 100%; /* Set to 100% for full-width */
-            overflow: hidden; /* Hide content that overflows */
-        }
+    section {
+        padding: 20px;
+        text-align: center;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 100%; /* Set to 100% for full-width */
+        overflow: hidden; /* Hide content that overflows */
+    }
 
-        h2 {
-            color: #006b3f;
-            font-size: 2em;
-        }
+    h2 {
+        color: #006b3f;
+        font-size: 2em;
+    }
 
-        p {
-            font-size: 1.4em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+    p {
+        font-size: 1.4em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
 
-        img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border: 5px solid #006b3f;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+    img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border: 5px solid #006b3f;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
 
-        .button-container {
-            margin-top: 20px;
-        }
+    .button-container {
+        margin-top: 20px;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    a {
+        text-decoration: none;
+    }
 
-        button {
-            background: linear-gradient(to bottom, #165349, #004d2c);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            font-size: 2.5em;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
-            margin-bottom: 25px;
-        }
+    button {
+        background: linear-gradient(to bottom, #165349, #004d2c);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: white;
+        font-size: 2.5em;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+        margin-bottom: 25px;
+    }
 
-        button:hover {
-            background: linear-gradient(to bottom, #004d2c, #165349);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px);
-        }
+    button:hover {
+        background: linear-gradient(to bottom, #004d2c, #165349);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
 
-        footer {
-            background-color: #165349;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: auto;
-        }
+    section:last-of-type {
+        background-color: #ffc107; /* Different background color for the last section */
+        border: 5px solid #e0a800; /* Border color for emphasis */
+    }
 
-        footer img {
-            border: none;
-            width: 142px;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    section:last-of-type h2 {
+        color: #333; /* Different text color for the heading in the last section */
+    }
+
+    section:last-of-type p {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    section:last-of-type img {
+        border: 5px solid #e0a800; /* Border color matching the background */
+    }
+
+    section:last-of-type .button-container {
+        margin-top: 40px; /* Increased margin for extra emphasis */
+    }
+
+    section:last-of-type button {
+        white-space: nowrap; /* Prevent button text from wrapping to the next line */
+        background: linear-gradient(to bottom, #004d2c, #165349); /* Gradient for the button */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: white;
+        font-size: 2.8em;
+        padding: 25px 50px;
+        margin-bottom: 30px;
+    }
+
+    section:last-of-type button:hover {
+        background: linear-gradient(to bottom, #ffc107, #e0a800);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+
+    footer {
+        background-color: #165349;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer img {
+        border: none;
+        width: 142px;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -129,14 +167,14 @@
     </header>
     
     <section>
-        <h2>What If You Could Expect These Results?</h2>
+        <h2>What If You Could Have These Results?</h2>
         <p>Read testimonials from our satisfied customers for more results like this.</p>
         <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
             <img src='imgs/9.png' alt='Result Image'>
         </a>
         <div class="button-container">
             <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
-                <button>Discover Now!</button>
+                <button>Discover!</button>
             </a>
         </div>
     </section>
@@ -149,20 +187,29 @@
         </a>
         <div class="button-container">
             <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
-                <button>Discover Now!</button>
+                <button>Now!</button>
             </a>
         </div>
     </section>
 
     <section>
-        <h2>People Are Doing It Right Now!</h2>
+        <h2>People Are Doing It Now!</h2>
         <p>Explore customer successes, discover the benefits, and take advantage of our <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">risk-free 180-day guarantee</a>.</p>
         <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
             <img src='imgs/3.png' alt='Result Image'>
         </a>
         <div class="button-container">
             <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
-                <button>Discover Now!</button>
+                <button>Discover!</button>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>...YES YOU CAN</h2>
+        <div class="button-container">
+            <a href="https://2ab835qh2bt0jyke3nf003g82k.hop.clickbank.net" target="_blank">
+                <button>Now!</button>
             </a>
         </div>
     </section>
